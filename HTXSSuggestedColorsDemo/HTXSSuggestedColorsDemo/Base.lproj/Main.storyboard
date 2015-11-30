@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H26-WX-xSy"/>
+                        <viewControllerLayoutGuide type="bottom" id="pah-Ko-az9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="liK-f2-IcN">
+                                <rect key="frame" x="150" y="265" width="300" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnh-5U-LqU">
+                                        <rect key="frame" x="0.0" y="20" width="150" height="30"/>
+                                        <color key="backgroundColor" red="0.95686274766921997" green="0.95686274766921997" blue="0.95686274766921997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="HnE-wZ-Gg6"/>
+                                        </constraints>
+                                        <state key="normal" title="IB SuggestedColor">
+                                            <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1O-PU-UKB">
+                                        <rect key="frame" x="150" y="20" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="D2h-e8-A9Z"/>
+                                        </constraints>
+                                        <state key="normal" title="Color Set By Code"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cnh-5U-LqU" firstAttribute="top" secondItem="liK-f2-IcN" secondAttribute="top" constant="20" id="4TO-DB-q7o"/>
+                                    <constraint firstAttribute="trailing" secondItem="M1O-PU-UKB" secondAttribute="trailing" id="CZK-oj-7KA"/>
+                                    <constraint firstItem="M1O-PU-UKB" firstAttribute="leading" secondItem="cnh-5U-LqU" secondAttribute="trailing" constant="28" id="J28-S8-97d"/>
+                                    <constraint firstAttribute="width" constant="300" id="Jit-Jd-NEx"/>
+                                    <constraint firstAttribute="height" constant="70" id="K8G-t1-0bN"/>
+                                    <constraint firstItem="M1O-PU-UKB" firstAttribute="top" secondItem="liK-f2-IcN" secondAttribute="top" constant="20" id="La0-k7-Zca"/>
+                                    <constraint firstAttribute="bottom" secondItem="M1O-PU-UKB" secondAttribute="bottom" constant="20" id="dCy-Nl-B5p"/>
+                                    <constraint firstAttribute="bottom" secondItem="cnh-5U-LqU" secondAttribute="bottom" constant="20" id="iFf-sp-xWL"/>
+                                    <constraint firstItem="cnh-5U-LqU" firstAttribute="leading" secondItem="liK-f2-IcN" secondAttribute="leading" id="vyQ-h2-RCP"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="J28-S8-97d"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="liK-f2-IcN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Gt-7p-A7g"/>
+                            <constraint firstItem="liK-f2-IcN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="130" id="Nut-4k-LvN"/>
+                            <constraint firstAttribute="trailing" secondItem="liK-f2-IcN" secondAttribute="trailing" constant="130" id="Qbt-2O-fkt"/>
+                            <constraint firstItem="liK-f2-IcN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="duU-xg-lum"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Nut-4k-LvN"/>
+                                <exclude reference="Qbt-2O-fkt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="M1O-PU-UKB" id="nXL-UU-ceY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="339"/>
+        </scene>
+    </scenes>
+</document>
